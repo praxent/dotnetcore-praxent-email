@@ -21,6 +21,9 @@ namespace Praxent.Email.Model
         public string Subject { get; set; }
         [Required]
         public string TemplateName { get; set; }
+
+        public string FromEmail { get; set; }
+        public string ReplyTo { get; set; }
         public IDictionary<string, string> MergeValuesForTemplate { get; set; }
     }
 }
